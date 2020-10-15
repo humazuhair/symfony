@@ -15,7 +15,7 @@ Comme demandé dans le cahier des charges, chaque demande de contact est compos�
 * Indiquer comme nom de classe `Contact`
 * Les types des propriétés sont les suivants : 
     * Nom : `string`
-    * Email : `email`
+    * Email : `string`
     * Objet : `string`
     * Message : `text`   
 > Avant de créer le CRUD de l'entité `Contact`, pensez à supprimer les fichiers `templates/contact/index.html.twig` et `Controller/ContactController.php`
