@@ -24,18 +24,23 @@
         <div class="container">
             <div class="row">
                 <div class="logo_section">
-                    <a class="navbar-brand" href="{{ path('index') }}"><img src="{{ asset('images/logo.png') }}"
+                    {% block logo %}
+                        <a class="navbar-brand" href="{{ path('index') }}"><img src="{{ asset('images/logo.png') }}"
                                                                             alt="image"></a>
+                    {% endblock %}
                 </div>
-                <div class="site_information">
-                    <ul>
-                        <li><a href="mailto:exchang@gmail.com"><img src="{{ asset('images/mail_icon.png') }}" alt="#"/>exchang@gmail.com</a>
-                        </li>
-                        <li><a href="tel:exchang@gmail.com"><img src="{{ asset('images/phone_icon.png') }}" alt="#"/>+7123569847</a>
-                        </li>
-                        <li><a class="join_bt" href="#">Join us</a></li>
-                    </ul>
-                </div>
+
+                {% block header_links %}
+                    <div class="site_information">
+                        <ul>
+                            <li><a href="mailto:exchang@gmail.com"><img src="{{ asset('images/mail_icon.png') }}" alt="#"/>exchang@gmail.com</a>
+                            </li>
+                            <li><a href="tel:exchang@gmail.com"><img src="{{ asset('images/phone_icon.png') }}" alt="#"/>+7123569847</a>
+                            </li>
+                            <li><a class="join_bt" href="#">Join us</a></li>
+                        </ul>
+                    </div>
+                {% endblock %}
             </div>
         </div>
 
@@ -54,12 +59,14 @@
                             </button>
                             <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                                 <ul class="navbar-nav">
-                                    <li><a class="nav-link active" href="{{ path('index') }}">Home</a></li>
-                                    <li><a class="nav-link" href="about.html">About</a></li>
-                                    <li><a class="nav-link" href="exchange.html">Exchange</a></li>
-                                    <li><a class="nav-link" href="services.html">Services</a></li>
-                                    <li><a class="nav-link" href="{{ path('article_index') }}">News</a></li>
-                                    <li><a class="nav-link" href="{{ path('contact') }}">Contact</a></li>
+                                    {% block navbar_links %}
+                                        <li><a class="nav-link active" href="{{ path('index') }}">Home</a></li>
+                                        <li><a class="nav-link" href="about.html">About</a></li>
+                                        <li><a class="nav-link" href="exchange.html">Exchange</a></li>
+                                        <li><a class="nav-link" href="services.html">Services</a></li>
+                                        <li><a class="nav-link" href="{{ path('article_index') }}">News</a></li>
+                                        <li><a class="nav-link" href="{{ path('contact') }}">Contact</a></li>
+                                    {% endblock %}
                                 </ul>
                             </div>
                         </div>
