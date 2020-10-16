@@ -107,7 +107,7 @@ Créons ensuite le fichier `admin/layout.html.twig` :
 {% block title %}Hello AdminController!{% endblock %}
 
 {% block logo %}
-    <a class="navbar-brand" href="{{ path('admin_index')}}">
+    <a class="navbar-brand" href="{{ path('admin')}}">
         <img src="{{asset('images/admin_logo.png')}}" style="height: 110px;" alt="image">
     </a>
 {% endblock %}
@@ -139,6 +139,8 @@ Créons ensuite le fichier `admin/layout.html.twig` :
 
 {% endblock %}
 ```
+
+Remplacer dans `admin/index.html.twig`  la ligne `{% extends 'base.html.twig' %}` par `{% extends 'admin/layout.html.twig' %}` 
 
 > Vous pouvez constater que la page `/admin` a bien changé d'apparence. 
 
