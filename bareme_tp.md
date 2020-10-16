@@ -1,5 +1,21 @@
 ## Barème de notation du TP - LOT 1  
 
+Le projet est rendre sous forme de fichier `.zip` ou `.rar`, et à m'envoyer par message privé sur Teams. 
+
+Les dossiers/fichiers du projet à inclure dans le fichier compressé à rendre sont les suivants : 
+* `assets`
+* `config`
+* `public`
+* `src`
+* `templates`
+* `.env.local`
+* `composer.json`
+* `package.json`
+* `webpack.config.js`
+
+Vous trouverez ci-dessous les points à remplir pour obtenir un maximum de points sur votre 1ère note de TP.
+
+
 * Implémentation du cahier des charges
     * Navigation (_Liens fonctionnels_) 
         +   Bannière / Entête / Footer
