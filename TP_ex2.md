@@ -190,6 +190,7 @@ Maintenant que nous avons deux designs différents pour les espaces administrati
 L'idée ici est de reprendre le morceau de HTML suivant, pour afficher les articles :
  
 ```html
+{% block body %}
   <div class="section layout_padding padding_top_0">
         <div class="container">
             <div class="row">
@@ -217,7 +218,7 @@ L'idée ici est de reprendre le morceau de HTML suivant, pour afficher les artic
             </div>
         </div>
     </div>
-
+{% endblock %}
 ``` 
 
 #### Modification de la page d'un article
