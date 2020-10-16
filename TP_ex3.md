@@ -166,7 +166,9 @@ Modifions le fichier `ContactController` :
     public function new(Request $request): Response
     {
         //...
+        $entityManager->flush();
         $this->addFlash('success', 'Écrivez le message de confirmation ici');
+        //...
     }
 ```
 * Modifier la route de redirection : 
